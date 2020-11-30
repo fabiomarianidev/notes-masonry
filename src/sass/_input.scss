@@ -1,0 +1,14 @@
+.input__addButton {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 100;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5) ;
+}
+
+@media (min-width: 768px) {
+    .input__addButton {
+        right: 2rem;
+        bottom: 2rem;
+    }
+}
