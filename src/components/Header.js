@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Header() {
     return(
         <section className="header card "> {/* m-2 p-3 */}

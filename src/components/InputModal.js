@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react";
 
 // Modal used for creating a new note and editing an existing one

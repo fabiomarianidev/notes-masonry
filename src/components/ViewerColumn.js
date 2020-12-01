@@ -1,3 +1,4 @@
+import React from "react";
 import NoteCard from "./NoteCard";
 
 export default function ViewerColumn (props) {
