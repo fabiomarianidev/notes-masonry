@@ -1,5 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck, faEraser, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 // Modal used for creating a new note and editing an existing one
 // props are:
@@ -47,13 +49,13 @@ export default function InputModal (props) {
             <div className="card p-5">
                     <textarea className="textarea" rows="5" value={content} onChange={handleTextareaChange} />
                     <button className="button is-primary mt-3 mr-2" onClick={handleConfirmButton} >
-                        <i className="fas fa-check" />
+                        <FontAwesomeIcon icon={faCheck} />
                     </button>
                     <button className="button is-info mx-2 mt-3" onClick={handleClearButton} >
-                        <i className="fas fa-eraser" />
+                        <FontAwesomeIcon icon={faEraser} />
                     </button>
                     <button className="button is-danger mx-2 mt-3" onClick={handleCloseButton}>
-                        <i className="fas fa-times" />
+                        <FontAwesomeIcon icon={faTimes} />
                     </button>
             </div>
         </div>

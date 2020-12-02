@@ -1,5 +1,9 @@
 import React from "react";
 import { useState } from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+
 import InputModal from "./InputModal";
 
 export default function NotesInput (props) {
@@ -16,7 +20,9 @@ export default function NotesInput (props) {
 
     return(
         <section>
-            <button className="input__addButton button is-primary is-large" onClick={()=>{setShowModal(true)}}><i className="fas fa-plus"/></button>
+            <button className="input__addButton button is-primary is-large" onClick={()=>{setShowModal(true)}}>
+                <FontAwesomeIcon icon={faPlus} />
+            </button>
             <InputModal 
                 active={showModal}
                 handleConfirmButton={handleAdd}

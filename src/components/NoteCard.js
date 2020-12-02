@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
 
 import InputModal from "./InputModal";
 
@@ -32,7 +34,9 @@ export default function NoteCard (props) {
                         {props.content}
                     </div>
                     <button className="delete is-medium has-background-danger notecard__button" onClick={handleDelete}/>
-                    <button className="button is-info is-small" onClick={handleEditButton}><i className="fas fa-edit"/></button>
+                    <button className="button is-info is-small" onClick={handleEditButton}>
+                        <FontAwesomeIcon icon={faEdit} />
+                    </button>
                 </div>
             </div>
             <InputModal 
